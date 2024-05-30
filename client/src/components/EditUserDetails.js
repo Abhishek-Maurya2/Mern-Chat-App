@@ -59,7 +59,7 @@ const EditUserDetails = ({ onClose, user }) => {
     e.preventDefault();
     e.stopPropagation();
     try {
-      const URL = `http://localhost:8080/api/update-user`;
+      const URL = `${process.env.REACT_APP_BACKEND_URL}/api/update-user`;
 
       const response = await axios({
         method: "post",
