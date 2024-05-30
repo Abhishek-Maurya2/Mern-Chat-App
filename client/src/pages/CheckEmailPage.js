@@ -27,7 +27,7 @@ const CheckEmailPage = () => {
     e.preventDefault()
     e.stopPropagation()
 
-    const URL = `${process.env.REACT_APP_BACKEND_URL}/api/email`
+    const URL = `http://localhost:8080/api/email`;
 
     try {
         const response = await axios.post(URL,data)
